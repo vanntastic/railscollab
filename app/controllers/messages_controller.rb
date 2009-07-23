@@ -251,7 +251,7 @@ class MessagesController < ApplicationController
   def subscribe
     unless @message.can_be_seen_by(@logged_user)
       error_status(true, :insufficient_permissions)
-      redirect_back_or_default :controller => 'message'
+      redirect_back_or_default messages_path
       return
     end
 
@@ -271,7 +271,7 @@ class MessagesController < ApplicationController
   def unsubscribe
     unless @message.can_be_seen_by(@logged_user)
       error_status(true, :insufficient_permissions)
-      redirect_back_or_default :controller => 'message'
+      redirect_back_or_default messages_path
       return
     end
 
