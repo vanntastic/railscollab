@@ -71,7 +71,7 @@ module ProjectItemsHelper
       next if !company.is_owner? and !permissions.can_assign_to_other
 
       items[company.name] = [[:anyone.l, "c#{company.id}"], *company.users.collect do |user|
-        [user.username, user.id.to_s] if user.member_of(project)
+        [user.display_name, user.id.to_s] if user.member_of(project)
       end.compact]
     end
 
