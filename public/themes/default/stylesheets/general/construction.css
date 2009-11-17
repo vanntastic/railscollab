@@ -99,12 +99,20 @@ body {
 
 #userbox .PopupMenuWidgetDiv {
   position: absolute;
-  border: 1px solid #666;
+  border: 1px solid #ccc;
+  border-top:0;
   background: white;
   padding: 5px 10px;
   width: 140px;
   color: #333;
+  margin-top:5px;
   display: none;
+  background:#fff;
+  z-index:1000;
+}
+
+#userbox #administration_more_menu.PopupMenuWidgetDiv{
+  margin-left:50px;
 }
 
 #userbox .PopupMenuWidgetDiv p {
@@ -126,7 +134,7 @@ body {
 /** Tabs **/
 
 #tabsWrapper {
-  width: 780px;
+  width: 800px;
   margin: 5px auto 0 auto;
   text-align: left;
 }
@@ -270,7 +278,7 @@ body {
 #innerContentWrapper {
   margin: 0 auto;
   padding: 5px 10px;
-  width: 760px;
+  width: 800px;
   text-align: left;
   background:#fff;
   border:1px solid #ccc;
