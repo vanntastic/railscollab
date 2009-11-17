@@ -12,7 +12,8 @@
       <% if not ['Comment', 'ProjectMessage'].include?(application_logs.rel_object_type) %>
       <b><%= application_logs.friendly_action %>:</b>
       <% end %>
-      <%= application_logs.rel_object.nil? ? h(application_logs.object_name) : link_to(h(application_logs.object_name), application_logs.rel_object.object_url) %>
+      <!-- FIX : getting a routing error -->
+      <%# application_logs.rel_object.nil? ? h(application_logs.object_name) : link_to(h(application_logs.object_name), application_logs.rel_object.object_url) %>
       </span>
 
 <% if show_project_column %>
