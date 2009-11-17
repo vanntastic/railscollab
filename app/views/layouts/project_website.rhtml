@@ -16,7 +16,7 @@
     <%= javascript_include_tag 'jquery-ui.js' %>
     <%= javascript_include_tag 'jrails.js' %>
     <%= javascript_include_tag 'application.js' %>
-
+    <%= include_growlr %>
     <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
     <%= javascript_tag "var PROJECT_ID = #{@active_project.id};" %>
 <!-- head needs to go here? -->
@@ -61,7 +61,8 @@
     :onblur => "if (event.target.value == '#{@search_field_default_value}') event.target.value=''"
   }
 %>
-                <%= text_field_tag 'search_id', (h @last_search), @search_field_attrs %><button type="submit"><%= :go.l %></button>
+                 <input autosave="bsn_search" id="search_id" name="search_id" placeholder="Search " type="search" />
+<button type="submit"><%= :go.l %></button>
               </div>
             </form>
           </div>
@@ -72,9 +73,6 @@
       <!-- content wrapper -->
       <div id="outerContentWrapper">
         <div id="innerContentWrapper">
-<% if flash[:message] %>
-          <div id="<%= flash[:error] ? 'error' : 'success' %>" class="StatusMessage <%= flash[:error] ? 'flash_error' : 'flash_success' %>"><%= h flash[:message] %></div>
-<% end %>
           <h1 id="pageTitle"><%= h page_title %> <% if @private_object %><img src="<%= image_path('icons/private.gif') %>" alt="private"/><% end %></h1>
           <div id="pageContent">
             <div id="content" <%= @content_for_sidebar.nil? ? '' : 'class=\'sidebar\'' %>>

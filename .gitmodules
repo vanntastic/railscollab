@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/growlr"]
+	path = vendor/plugins/growlr
+	url = git@github.com:vanntastic/growlr.git

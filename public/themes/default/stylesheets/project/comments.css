@@ -1,6 +1,7 @@
 #objectComments div.comment {
   margin: 8px 0;
   padding: 10px;
+  border:1px solid #ccc;
 }
 
 #objectComments .commentHead {
@@ -15,7 +16,7 @@
 #objectComments .commentBody {
   border: 1px solid #ccc;
   border-width: 1px 0;
-  padding: 0 10px;
+  padding: 5px;
 }
 
 #objectComments .commentUserAvatar {

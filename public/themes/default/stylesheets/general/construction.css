@@ -41,6 +41,8 @@ body {
   padding:2px 4px;
 }
 
+#pageContent h2 a{ color:#fff; }
+
 #systemNoticesWrapper {
   background: red;
   color: white;
@@ -131,6 +133,7 @@ body {
 
 #tabs {
   float: left;
+  clear:left;
 }
 
 #tabs ul {
@@ -183,6 +186,7 @@ body {
   background: #444;
   margin: 0 auto;
   float: left;
+  padding:5px 0;
   width: 100%;
 }
 
