@@ -582,3 +582,8 @@ div.billable span {
   background: #FFFFFF;
   color: #000;
 }
+
+table{
+  width: 100%;
+  border:0;
+}
