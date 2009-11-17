@@ -241,12 +241,18 @@ table.blank th, table.blank td {
 }
 
 .block {
-  border-color: #ccc;
+  border:0;
+  border:1px solid #ccc;
   background-color: #f8f8f8;
 }
 
 .block .header {
   border-color: #ccc;
+}
+
+.block .header a{
+  text-decoration: none;
+  border-bottom:0;
 }
 
 .hint {

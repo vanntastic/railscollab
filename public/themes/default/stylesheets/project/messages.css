@@ -3,11 +3,14 @@
 .message .block .header {
   font-size: 150%;
   padding-bottom: 5px;
+  border-bottom:1px dotted #ccc;
 }
 
 .message .messageDetails {
-  padding: 4px 5px;
-  border-bottom: 1px solid #e8e8e8;
+  padding: 8px;
+  background:#eee;
+  border-top: 1px solid #eee;
+  border: 1px solid #ccc;
 }
 
 .message h1, .message h2, .message h3 {
